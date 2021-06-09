@@ -1,2 +1,31 @@
 /* @VARIABLES */
 /* ********** */
+
+//tipografía
+
+
+//colores
+$colores: (
+gris: #C4C4C4,
+nanranja: #F2624A,
+beach: #F8F6EE,
+marron: #FFE6D1
+);
+
+//dispositivos
+$duspositivos: (
+    smartphone: 360px,
+    desktop:1366px
+);
+
+//breakpoints
+$breakpoints: (
+    smoartphone:320px,
+    desktop: 1100px
+);
+
+//márgenes
+/*$margenes: (
+    internos: 20px,
+    navHorizontal: 10px
+);*/

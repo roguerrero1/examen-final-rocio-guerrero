@@ -1,2 +1,40 @@
 /* @TIPOGRAFÍA */
 /* ********** */
+
+
+// FONT-FACE
+
+@font-face {
+    font-family: "arial";
+    src:    url(../../font/arial.woff2) format("woff2"),
+    url(../../font/arial.woff) format("woff");
+}
+
+@font-face {
+    font-family: "arialblack";
+    src:    url(../../font/arialblack.woff2) format("woff2"),
+            url(../../font/arialblack.woff) format("woff");
+    font-weight: 800;
+}
+
+html{
+    font-size: 16px;
+    font-family: "arial";
+    color: map-get($colores, negro);
+}
+
+// Clases Tipográficas
+.titulo{
+    font-size: 36px;
+    font-weight: bold;
+}
+.subtitulo{
+
+}
+.parrafo{
+
+}
+.copy{
+    font-size: .5625rem;
+    color: map-get($colores, negro);
+}
