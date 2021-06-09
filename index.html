@@ -1,21 +1,123 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
-        <link rel="stylesheet" href="./css/main.css" />
-    </head>
-    <body>
-        <!-- HEADER -->
-        <header>
-        </header>
-        <!-- MAIN -->
-        <main>
-        </main>
-        <!-- FOOTER -->
-        <footer>
-        </footer>
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cámaras</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <div class="contenedor">
+      <!-- HEADER -->
+      <header>
+        <!-- Menu Principal -->
+        <nav class=menuPrincipal>
+          <a class=menuPrincipal__comprarYa href="comprarya.html">comprar ya!</a>
+          <a class=menuPrincipal__productos href="productos.html">productos</a>
+          <a class=menuPrincipal__servicios href="servicios.html">servicios</a>
+
+          <!-- Logotipo -->
+          <h1 class="logo">LOGOTIPO</h1>
+        </nav>
+      </header>
+
+      <!-- MAIN -->
+      <main>
+        <!-- cámara frente -->
+        <section class=camaraFrente>
+          <figure>
+            <picture>
+              <source
+                srcset="
+                  ./img/smartphone/camara_frente.jpg    1x,
+                  ./img/smartphone/camara_frente@2x.jpg 2x,
+                  ./img/smartphone/camara_frente@3x.jpg 3x
+                "
+              />
+              <img src="" alt="camara de frente" />
+            </picture>
+            <figcaption>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis sapien ac eget orci lectus a. Tellus integer accumsan aliquet arcu cras tristique. Semper proin porta adipiscing faucibus. Eu scelerisque ornare nunc, venenatis fringilla tincidunt consectetur.
+              </p>
+            </figcaption>
+          </figure>
+          <!-- botón leer más -->
+          <button type="submit">Leer más</button>
+        </section>
+        
+        <!-- cámara arriba -->
+        <section class=camaraArriba>
+          <figure>
+            <picture>
+              <source
+                srcset="
+                  ./img/smartphone/camara_arriba.jpg    1x,
+                  ./img/smartphone/camara_arriba@2x.jpg 2x,
+                  ./img/smartphone/camara_arriba@3x.jpg 3x
+                "
+              />
+              <img src="" alt="camara hacia arriba" />
+            </picture>
+            <figcaption>
+                <h3>Opción 1</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis sapien ac eget orci lectus a.
+              </p>
+            </figcaption>
+                <h3>Opción 2</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis sapien ac eget orci lectus a.
+              </p>
+            </figcaption>
+                <h3>Opción 3</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis sapien ac eget orci lectus a.
+              </p>
+            </figcaption>
+            </figcaption>
+                <h3>Opción 4</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis sapien ac eget orci lectus a.
+              </p>
+            </figcaption>
+          </figure>
+        </section>
+
+                <!-- lente de cámara -->
+                <section class="lente">
+                    <figure>
+                      <picture>
+                        <source
+                          srcset="
+                            ./img/smartphone/lente.jpg    1x,
+                            ./img/smartphone/lente@2x.jpg 2x,
+                            ./img/smartphone/lente@3x.jpg 3x
+                          "
+                        />
+                        <img src="" alt="lentes de cámara" />
+                      </picture>
+                      <figcaption>
+                        <p class="texto__negrita">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dictumst proin augue habitant nibh condimentum. Mi imperdiet enim aliquam enim proin tellus, fringilla et et. Ultrices lobortis in risus suspendisse eget rhoncus, mauris, lobortis. In tincidunt bibendum at in cursus. Eleifend faucibus turpis quis justo amet maecenas quis. Suscipit nibh sem est at. A lectus euismod metus, pretium id.
+                            Leo ac elementum diam eget massa consectetur. Adipiscing maecenas sit gravida tincidunt posuere aenean semper auctor. Placerat sit quam mattis integer amet cursus. Turpis non magna risus libero, volutpat, et. Tortor elementum magna odio nulla. Id fermentum sapien eu nunc tristique id. Egestas purus venenatis interdum odio est ipsum faucibus maecenas. Ultricies sit erat ac nunc velit. Etiam neque blandit pharetra orci sed amet. Ultricies nec, vulputate suspendisse auctor risus massa vel, viverra pulvinar. Malesuada dignissim feugiat morbi sit dolor urna.
+                            A et ipsum sollicitudin phasellus ultricies. Suscipit et et platea eget in faucibus. Vitae amet, malesuada erat praesent. Enim, lacinia enim placerat mi morbi dui sapien eget. Sapien convallis sed quis amet tellus in sed quam id.
+                        </p>
+                      </figcaption>
+                    </figure>
+                    </section>
+      </main>
+      <!-- FOOTER -->
+      <footer>
+
+          <!-- botón noticias -->
+          <form class="newsletter__formulario">
+              <input type="email" name="email" placeholder="tu email" >
+              <button type="submit">noticias</button>
+          </form>
+
+      </footer>
+    </div>
+  </body>
 </html>

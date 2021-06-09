@@ -10,11 +10,11 @@
     url(../../font/arial.woff) format("woff");
 }
 
-@font-face {
+/*@font-face {
     font-family: "arialblack";
     src:    url(../../font/arialblack.woff2) format("woff2"),
             url(../../font/arialblack.woff) format("woff");
-    font-weight: 800;
+    font-weight: 800;*/
 }
 
 html{
@@ -24,17 +24,42 @@ html{
 }
 
 // Clases Tipográficas
+.nav{
+    font-size: 18px;
+    color: map-get($colores, negro);
+}
+
+.boton{
+    font-size: 18px;
+    font-family: "arial";
+    color: map-get($colores, beach);
+}
+
+.logo{
+    font-size: 108px;
+    font-family: "arial";
+    color: map-get($colores, negro);
+}
+
 .titulo{
     font-size: 36px;
+    font-family: "arial";
     font-weight: bold;
+    color: map-get($colores, negro);
 }
 .subtitulo{
-
+    font-size: 18px;
+    font-family: "arial";
+    font-weight: bold;
+    color: map-get($colores, negro);
 }
 .parrafo{
-
+    font-size: 16px;
+    font-family: "arial";
+    color: map-get($colores, negro);
 }
 .copy{
     font-size: .5625rem;
+    font-family: "arial";
     color: map-get($colores, negro);
 }
