@@ -1,4 +1,19 @@
 /* @GRIDS */
 /* ********** */
 
+@media only screen and (min-width: map-get($breakpoints, smartphone)) and (orientation: portrait) {
+  .contenedor {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 18.384375rem auto 28.125rem;
+  }
+}
 
+
+@media only screen and (min-width: map-get($breakpoints, desktop)) {
+  .contenedor {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 18.384375rem auto 28.125rem;
+  }
+}

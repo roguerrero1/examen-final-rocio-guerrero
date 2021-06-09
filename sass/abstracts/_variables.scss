@@ -9,18 +9,18 @@ $colores: (
 gris: #C4C4C4,
 nanranja: #F2624A,
 beach: #F8F6EE,
-marron: #FFE6D1
-);
+marron: #FFE6D1,
+negro: black );
 
-//dispositivos
-$duspositivos: (
+//tamaños
+$dispositivos: (
     smartphone: 360px,
     desktop:1366px
 );
 
 //breakpoints
 $breakpoints: (
-    smoartphone:320px,
+    smartphone:320px,
     desktop: 1100px
 );
 
