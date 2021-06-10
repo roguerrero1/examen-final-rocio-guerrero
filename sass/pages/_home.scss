@@ -1,2 +1,58 @@
 /* @HOME */
 /* ********** */
+
+.cuerpo {
+}
+
+.sectionUno {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+  background-color: map-get($colores, marron);
+  margin: 1rem;
+  padding-bottom: 3.125rem;
+
+  p {
+    color: map-get($colores, negro);
+    justify-content: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+.sectionDos {
+  text-align: left;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  h3 {
+    color: map-get($colores, negro);
+    font-family: Arial;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 1.125rem;
+    margin-top: 1rem;
+  }
+  p {
+    color: map-get($colores, negro);
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.sectionTres {
+  p {
+    color: map-get($colores, negro);
+    justify-content: center;
+    text-align: center;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.125rem;
+    margin: 1rem 1rem 3rem 1rem;
+  }
+}

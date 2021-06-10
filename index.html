@@ -11,106 +11,138 @@
     <div class="contenedor">
       <!-- HEADER -->
       <header>
-        <!-- Menu Principal -->
-        <nav class=menuPrincipal>
-                      <!-- botón comprar ya! -->
-          <a class=menuPrincipal__comprarYa href="comprarya.html">Comprar ya!</a>
-          <a class=menuPrincipal__productos href="productos.html">Productos</a>
-          <a class=menuPrincipal__servicios href="servicios.html">Servicios</a>
-
-          <!-- Logotipo -->
-          <h1 class="logo">LOGOTIPO</h1>
-        </nav>
+        <section class="menu">
+          <!-- Menu Principal -->
+          <nav class=menuPrincipal>
+                        <!-- botón comprar ya! -->
+            <a class=menuPrincipal__comprarYa href="comprarya.html">Comprar ya!</a>
+            <a class=menuPrincipal__productos href="productos.html">Productos</a>
+            <a class=menuPrincipal__servicios href="servicios.html">Servicios</a>
+  
+            <!-- Logotipo -->
+            <h1 class="menu__logo">LOGOTIPO</h1>
+          </nav>
+        </section>
       </header>
 
       <!-- MAIN -->
       <main>
-        <!-- cámara frente -->
-        <section class=camaraFrente>
-          <figure>
-            <picture>
-              <source
-                srcset="
-                  ./img/smartphone/camara_frente.jpg    1x,
-                  ./img/smartphone/camara_frente@2x.jpg 2x,
-                  ./img/smartphone/camara_frente@3x.jpg 3x
-                "
-              />
-              <img src="" alt="camara de frente" />
-            </picture>
-            <figcaption>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis sapien ac eget orci lectus a. Tellus integer accumsan aliquet arcu cras tristique. Semper proin porta adipiscing faucibus. Eu scelerisque ornare nunc, venenatis fringilla tincidunt consectetur.
-              </p>
-            </figcaption>
-          </figure>
-          <!-- botón leer más -->
-          <button class=boton__leerMas type="submit">Leer más</button>
-        </section>
-        
-        <!-- cámara arriba -->
-        <section class=camaraArriba>
-          <figure>
-            <picture>
-              <source
-                srcset="
-                  ./img/smartphone/camara_arriba.jpg    1x,
-                  ./img/smartphone/camara_arriba@2x.jpg 2x,
-                  ./img/smartphone/camara_arriba@3x.jpg 3x
-                "
-              />
-              <img src="" alt="camara hacia arriba" />
-            </picture>
-            <figcaption>
-                <h3>Opción 1</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis sapien ac eget orci lectus a.
-              </p>
-            </figcaption>
-                <h3>Opción 2</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis sapien ac eget orci lectus a.
-              </p>
-            </figcaption>
-                <h3>Opción 3</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis sapien ac eget orci lectus a.
-              </p>
-            </figcaption>
-            </figcaption>
-                <h3>Opción 4</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis sapien ac eget orci lectus a.
-              </p>
-            </figcaption>
-          </figure>
-        </section>
-
-                <!-- lente de cámara -->
-                <section class="lente">
-                    <figure>
-                      <picture>
-                        <source
-                          srcset="
-                            ./img/smartphone/lente.jpg    1x,
-                            ./img/smartphone/lente@2x.jpg 2x,
-                            ./img/smartphone/lente@3x.jpg 3x
-                          "
-                        />
-                        <img src="" alt="lentes de cámara" />
-                      </picture>
-                      <figcaption>
-                        <p class="texto__negrita">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dictumst proin augue habitant nibh condimentum. Mi imperdiet enim aliquam enim proin tellus, fringilla et et. Ultrices lobortis in risus suspendisse eget rhoncus, mauris, lobortis. In tincidunt bibendum at in cursus. Eleifend faucibus turpis quis justo amet maecenas quis. Suscipit nibh sem est at. A lectus euismod metus, pretium id.
-                            Leo ac elementum diam eget massa consectetur. Adipiscing maecenas sit gravida tincidunt posuere aenean semper auctor. Placerat sit quam mattis integer amet cursus. Turpis non magna risus libero, volutpat, et. Tortor elementum magna odio nulla. Id fermentum sapien eu nunc tristique id. Egestas purus venenatis interdum odio est ipsum faucibus maecenas. Ultricies sit erat ac nunc velit. Etiam neque blandit pharetra orci sed amet. Ultricies nec, vulputate suspendisse auctor risus massa vel, viverra pulvinar. Malesuada dignissim feugiat morbi sit dolor urna.
-                            A et ipsum sollicitudin phasellus ultricies. Suscipit et et platea eget in faucibus. Vitae amet, malesuada erat praesent. Enim, lacinia enim placerat mi morbi dui sapien eget. Sapien convallis sed quis amet tellus in sed quam id.
-                        </p>
-                      </figcaption>
-                    </figure>
-                    </section>
+          <section class="cuerpo">
+          <!-- cámara frente -->
+          <section class=sectionUno>
+            <figure class=camaraFrente>
+              <!-- smartphone -->
+              <picture>
+                <source
+                  srcset="
+                    ./img/smartphone/camara_frente.jpg    1x,
+                    ./img/smartphone/camara_frente@2x.jpg 2x,
+                    ./img/smartphone/camara_frente@3x.jpg 3x
+                  "
+                  media="(min-width:320px) and (orientation:portrait)"
+                  />
+                  <!-- desktop -->
+                  <source srcset="
+                  ./img/desktop/camara_frente.jpg    1x,
+                  ./img/desktop/camara_frente@2x.jpg 2x
+                  "
+                  media="(min-width:1000px)"
+                />
+                <img src="" alt="camara de frente" />
+              </picture>
+              <figcaption class="sectionUno__texto">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis sapien ac eget orci lectus a. Tellus integer accumsan aliquet arcu cras tristique. Semper proin porta adipiscing faucibus. Eu scelerisque ornare nunc, venenatis fringilla tincidunt consectetur.
+                </p>
+              </figcaption>
+            </figure>
+            <!-- botón leer más -->
+            <button class=boton__leerMas type="submit">Leer más</button>
+          </section>
+          
+          <!-- cámara arriba -->
+          <section class=sectionDos>
+            <figure class=camaraArriba>
+              <picture>
+                <!-- smartphone -->
+                <source
+                  srcset="
+                    ./img/smartphone/camara_arriba.jpg    1x,
+                    ./img/smartphone/camara_arriba@2x.jpg 2x,
+                    ./img/smartphone/camara_arriba@3x.jpg 3x
+                  "
+                  media="(min-width:320px) and (orientation:portrait)"
+                />
+                  <!-- desktop -->
+                  <source srcset="
+                  ./img/desktop/camara_arriba.jpg    1x,
+                  ./img/desktop/camara_arriba@2x.jpg 2x
+                  "
+                  media="(min-width:1000px)"
+                  />
+                <img src="" alt="camara hacia arriba" />
+              </picture>
+              <figcaption>
+                  <h3>Opción 1</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis sapien ac eget orci lectus a.
+                </p>
+              </figcaption>
+                  <h3>Opción 2</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis sapien ac eget orci lectus a.
+                </p>
+              </figcaption>
+                  <h3>Opción 3</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis sapien ac eget orci lectus a.
+                </p>
+              </figcaption>
+              </figcaption>
+                  <h3>Opción 4</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis sapien ac eget orci lectus a.
+                </p>
+              </figcaption>
+            </figure>
+          </section>
+  
+                  <!-- lente de cámara -->
+                  <section class=sectionTres>
+                      <figure class="lente">
+                        <picture>
+                          <!-- smartphone -->
+                          <source
+                            srcset="
+                              ./img/smartphone/lente.jpg    1x,
+                              ./img/smartphone/lente@2x.jpg 2x,
+                              ./img/smartphone/lente@3x.jpg 3x
+                            "
+                            media="(min-width:320px) and (orientation:portrait)"
+                          />
+                            <!-- desktop -->
+                            <source srcset="
+                            ./img/desktop/lente.jpg    1x,
+                            ./img/desktop/lente@2x.jpg 2x
+                            "
+                            media="(min-width:1000px)"
+                            />
+                          <img src="" alt="lentes de cámara" />
+                        </picture>
+                        <figcaption>
+                          <p>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dictumst proin augue habitant nibh condimentum. Mi imperdiet enim aliquam enim proin tellus, fringilla et et. Ultrices lobortis in risus suspendisse eget rhoncus, mauris, lobortis. In tincidunt bibendum at in cursus. Eleifend faucibus turpis quis justo amet maecenas quis. Suscipit nibh sem est at. A lectus euismod metus, pretium id.
+                              Leo ac elementum diam eget massa consectetur. Adipiscing maecenas sit gravida tincidunt posuere aenean semper auctor. Placerat sit quam mattis integer amet cursus. Turpis non magna risus libero, volutpat, et. Tortor elementum magna odio nulla. Id fermentum sapien eu nunc tristique id. Egestas purus venenatis interdum odio est ipsum faucibus maecenas. Ultricies sit erat ac nunc velit. Etiam neque blandit pharetra orci sed amet. Ultricies nec, vulputate suspendisse auctor risus massa vel, viverra pulvinar. Malesuada dignissim feugiat morbi sit dolor urna.
+                              A et ipsum sollicitudin phasellus ultricies. Suscipit et et platea eget in faucibus. Vitae amet, malesuada erat praesent. Enim, lacinia enim placerat mi morbi dui sapien eget. Sapien convallis sed quis amet tellus in sed quam id.
+                          </p>
+                        </figcaption>
+                      </figure>
+                      </section>
+      </section>
       </main>
       <!-- FOOTER -->
       <footer>
+        <section class=footer__arriba>
         <!-- empresa -->
         <article class="empresa">
             <h5 class="empresa__titulo">Empresa</h5>
@@ -119,7 +151,6 @@
                 <li><a href="historia.html">Historia</a></li>
             </ul>
         </article>
-
         <!-- comunidad -->
         <article class="comunidad">
             <h5 class="comunidad__titulo">Comunidad</h5>
@@ -129,6 +160,7 @@
                 <li><a href="foros.html">Footer</a></li>
             </ul>
         </article>
+      </section>
 
         <!-- contactar -->
         <article class="contactar">
@@ -139,7 +171,6 @@
                 <li><a href="tel:3466666666">+34 666 66 66 66</a></li>
             </ul>
         </article>
-
         <!-- redes -->
         <article class="redes">
             <h5 class="redes__titulo">Redes</h5>
@@ -151,9 +182,9 @@
         </article>
 
           <!-- botón noticias -->
-          <form class="newsletter__formulario">
-              <input type="email" name="email" placeholder="tu email" >
-              <button type="submit">Noticias</button>
+          <form class="newsletter">
+              <input class=newsletter__input type="email" name="email" placeholder="tu email" >
+              <button class=newsletter__boton type="submit">Noticias</button>
           </form>
           <!-- copyright -->
           <h6 class="copyright">Copyright 2021 - Examen Áliad Junio</h6>

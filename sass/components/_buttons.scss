@@ -1,2 +1,65 @@
 /* @BOTONES */
 /* ********** */
+
+
+.newsletter {
+  &__input {
+    width: 20.5rem;
+    height: 3.125rem;
+    border-color: transparent;
+    margin-top: 1rem;
+  }
+  &__boton {
+    width: 20.5rem;
+    height: 3.125rem;
+    background-color: #F2624A;
+    color: #fff;
+    border-color: transparent;
+    border-radius: 50px 50px 50px 50px;
+  }
+}
+
+.boton__leerMas {
+      width: 20.5rem;
+      height: 3.125rem;
+      font-size: 1.125rem;
+      font-weight: 400;
+      background-color: #F2624A;
+      color: #fff;
+      margin-top: 1rem;
+      padding-top: 1rem;
+      border-color: transparent;
+      border-radius: 0px 50px 50px 0px;
+    }
+
+
+.menuPrincipal__productos, .menuPrincipal__servicios{
+    background-color: map-get($colores, marron);
+    color: map-get($colores,negro);
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.125rem;
+    text-align: center;
+    width: 20.4375rem;
+    height: 3.125rem;
+    padding-top: 1rem;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    position: static;
+  }
+
+  .menuPrincipal__comprarYa {
+    color: map-get($colores, beach);
+    /*border: 1px solid map-get($colores, naranja);*/
+    background-color: #F2624A;
+    /*background-color: map-get($colores,naranja);*/
+    border-color: transparent;
+    font-size: 1.125rem;
+    width: 8.125rem;
+    height: 3.125rem;
+    padding: 1rem;
+    text-align: center;
+    margin: 0.5rem;
+  }
+

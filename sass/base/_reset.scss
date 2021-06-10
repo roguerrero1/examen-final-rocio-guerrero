@@ -2,7 +2,10 @@
 /* ********** */
 
 *{
+    font-family: arial;
     box-sizing: border-box;
+    margin: 0;
+    /*background-color: map-get($colores,beach);*/
 }
 
 a{
